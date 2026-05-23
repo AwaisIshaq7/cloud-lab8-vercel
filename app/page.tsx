@@ -99,7 +99,11 @@ export default function Home() {
             </p>
           </div>
         </div>
-
+< span style={{ background: "linear-gradient(120deg, #f0f0ff, #d9d9ff)", WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent" }}>
+<h1>
+        {process.env.NEXT_PUBLIC_APP_NAME}
+      </h1>
+      </span>
         <div
           style={{
             marginTop: "2.5rem",
