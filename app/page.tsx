@@ -1,65 +1,128 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <main
+      style={{
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor: "#0a0a0f",
+        backgroundImage: "radial-gradient(circle at 10% 20%, rgba(128, 0, 255, 0.08) 0%, rgba(0, 0, 0, 0) 80%)",
+        fontFamily: "'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif",
+        padding: "2rem",
+        margin: 0,
+      }}
+    >
+      <div
+        style={{
+          backdropFilter: "blur(10px)",
+          backgroundColor: "rgba(15, 15, 20, 0.7)",
+          borderRadius: "2rem",
+          padding: "3rem 4rem",
+          boxShadow: "0 25px 45px -12px rgba(128, 0, 255, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.05)",
+          border: "1px solid rgba(128, 0, 255, 0.3)",
+          maxWidth: "700px",
+          width: "100%",
+          textAlign: "center",
+        }}
+      >
+        <h1
+          style={{
+            fontSize: "3.5rem",
+            fontWeight: "800",
+            background: "linear-gradient(135deg, #ffffff 0%, #c084fc 40%, #a855f7 100%)",
+            WebkitBackgroundClip: "text",
+            backgroundClip: "text",
+            color: "transparent",
+            marginBottom: "1.5rem",
+            letterSpacing: "-0.02em",
+            textShadow: "0 2px 10px rgba(168, 85, 247, 0.2)",
+          }}
+        >
+          Cloud Computing Lab 8 – Vercel Deployment
+        </h1>
+
+        <div
+          style={{
+            marginTop: "2rem",
+            display: "flex",
+            flexDirection: "column",
+            gap: "1.25rem",
+          }}
+        >
+          <div
+            style={{
+              backgroundColor: "rgba(128, 0, 255, 0.12)",
+              padding: "1rem 1.5rem",
+              borderRadius: "1rem",
+              borderLeft: "4px solid #a855f7",
+              transition: "transform 0.2s ease",
+            }}
+          >
+            <p
+              style={{
+                fontSize: "1.3rem",
+                fontWeight: "500",
+                color: "#e9e9ff",
+                margin: 0,
+              }}
+            >
+              <span style={{ color: "#c084fc", fontWeight: "600" }}>Name:</span>{" "}
+              <span style={{ background: "linear-gradient(120deg, #f0f0ff, #d9d9ff)", WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent" }}>
+                Muhammad Awais Ishaq
+              </span>
+            </p>
+          </div>
+
+          <div
+            style={{
+              backgroundColor: "rgba(128, 0, 255, 0.08)",
+              padding: "1rem 1.5rem",
+              borderRadius: "1rem",
+              borderLeft: "4px solid #7e22ce",
+              transition: "transform 0.2s ease",
+            }}
+          >
+            <p
+              style={{
+                fontSize: "1.3rem",
+                fontWeight: "500",
+                color: "#e9e9ff",
+                margin: 0,
+              }}
+            >
+              <span style={{ color: "#c084fc", fontWeight: "600" }}>Roll No:</span>{" "}
+              <span style={{ background: "linear-gradient(120deg, #f0f0ff, #d9d9ff)", WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent" }}>
+                01-131232-052
+              </span>
+            </p>
+          </div>
+        </div>
+
+        <div
+          style={{
+            marginTop: "2.5rem",
+            width: "80px",
+            height: "4px",
+            background: "linear-gradient(90deg, #a855f7, #c084fc, #a855f7)",
+            borderRadius: "4px",
+            marginLeft: "auto",
+            marginRight: "auto",
+          }}
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+        
+        <p
+          style={{
+            marginTop: "2rem",
+            fontSize: "0.85rem",
+            color: "#6b6b8f",
+            letterSpacing: "0.5px",
+          }}
+        >
+          deployed with <span style={{ color: "#c084fc" }}>▲ Vercel</span>
+        </p>
+      </div>
+    </main>
   );
 }
