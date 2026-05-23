@@ -95,6 +95,15 @@ export default function Home() {
               <span style={{ color: "#c084fc", fontWeight: "600" }}>Roll No:</span>{" "}
               <span style={{ background: "linear-gradient(120deg, #f0f0ff, #d9d9ff)", WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent" }}>
                 01-131232-052
+
+                <h2>Completed Labs</h2>
+
+<ul>
+  <li>Docker</li>
+  <li>LocalStack</li>
+  <li>Terraform</li>
+  <li>Vercel</li>
+</ul>
               </span>
             </p>
           </div>
